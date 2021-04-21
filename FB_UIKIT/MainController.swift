@@ -10,11 +10,14 @@ import LBTATools
 
 class PostCell: LBTAListCell<String> {
     
-    let imageView = UIImageView(backgroundColor: .red)
+    let imageView = UIImageView(backgroundColor: .blue)
     let nameLabel = UILabel(text: "Name Label")
     let dateLabel = UILabel(text: "Friday at 11:11AM")
     let postTextLabel = UILabel(text: "Here is my post text")
-    let imageViewGrid = UIView(backgroundColor: .yellow)
+    
+//    let imageViewGrid = UIView(backgroundColor: .yellow)
+    
+    let photosGridController = PhotosGridController()
     
     override func setupViews() {
         backgroundColor = .white
@@ -24,9 +27,8 @@ class PostCell: LBTAListCell<String> {
                      spacing: 8
         ).padLeft(12).padRight(12).padTop(12),
         postTextLabel,
-        imageViewGrid,
+        photosGridController.view,
         spacing: 8)
-        
     }
 }
 
@@ -41,7 +43,7 @@ class MainController: LBTAListController<PostCell, String>, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: view.frame.width, height: 300)
+        return .init(width: view.frame.width, height: 450)
     }
     
 }

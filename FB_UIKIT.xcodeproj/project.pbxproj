@@ -15,6 +15,7 @@
 		5F14DE6825CB410000A5CD54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F14DE6625CB410000A5CD54 /* LaunchScreen.storyboard */; };
 		5F14DE7125CB42CF00A5CD54 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14DE7025CB42CF00A5CD54 /* MainController.swift */; };
 		5F14DE7525CB450400A5CD54 /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 5F14DE7425CB450400A5CD54 /* LBTATools */; };
+		5FFA81CA2630662C00E015B8 /* PhotosGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFA81C92630662C00E015B8 /* PhotosGridController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5F14DE6725CB410000A5CD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F14DE6925CB410000A5CD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F14DE7025CB42CF00A5CD54 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		5FFA81C92630662C00E015B8 /* PhotosGridController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGridController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				5F14DE6925CB410000A5CD54 /* Info.plist */,
 				5F14DE6325CB410000A5CD54 /* Preview Content */,
 				5F14DE7025CB42CF00A5CD54 /* MainController.swift */,
+				5FFA81C92630662C00E015B8 /* PhotosGridController.swift */,
 			);
 			path = FB_UIKIT;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				5F14DE7125CB42CF00A5CD54 /* MainController.swift in Sources */,
 				5F14DE5C25CB40FE00A5CD54 /* AppDelegate.swift in Sources */,
 				5F14DE5E25CB40FE00A5CD54 /* SceneDelegate.swift in Sources */,
+				5FFA81CA2630662C00E015B8 /* PhotosGridController.swift in Sources */,
 				5F14DE6025CB40FE00A5CD54 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

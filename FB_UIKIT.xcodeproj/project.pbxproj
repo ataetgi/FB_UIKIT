@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		5F14DE6225CB410000A5CD54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F14DE6125CB410000A5CD54 /* Assets.xcassets */; };
 		5F14DE6525CB410000A5CD54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F14DE6425CB410000A5CD54 /* Preview Assets.xcassets */; };
 		5F14DE6825CB410000A5CD54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F14DE6625CB410000A5CD54 /* LaunchScreen.storyboard */; };
+		5F14DE7125CB42CF00A5CD54 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14DE7025CB42CF00A5CD54 /* MainController.swift */; };
+		5F14DE7525CB450400A5CD54 /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 5F14DE7425CB450400A5CD54 /* LBTATools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		5F14DE6425CB410000A5CD54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F14DE6725CB410000A5CD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F14DE6925CB410000A5CD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F14DE7025CB42CF00A5CD54 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F14DE7525CB450400A5CD54 /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				5F14DE6625CB410000A5CD54 /* LaunchScreen.storyboard */,
 				5F14DE6925CB410000A5CD54 /* Info.plist */,
 				5F14DE6325CB410000A5CD54 /* Preview Content */,
+				5F14DE7025CB42CF00A5CD54 /* MainController.swift */,
 			);
 			path = FB_UIKIT;
 			sourceTree = "<group>";
@@ -91,6 +96,9 @@
 			dependencies = (
 			);
 			name = FB_UIKIT;
+			packageProductDependencies = (
+				5F14DE7425CB450400A5CD54 /* LBTATools */,
+			);
 			productName = FB_UIKIT;
 			productReference = 5F14DE5825CB40FE00A5CD54 /* FB_UIKIT.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +126,9 @@
 				Base,
 			);
 			mainGroup = 5F14DE4F25CB40FE00A5CD54;
+			packageReferences = (
+				5F14DE7325CB450400A5CD54 /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = 5F14DE5925CB40FE00A5CD54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F14DE7125CB42CF00A5CD54 /* MainController.swift in Sources */,
 				5F14DE5C25CB40FE00A5CD54 /* AppDelegate.swift in Sources */,
 				5F14DE5E25CB40FE00A5CD54 /* SceneDelegate.swift in Sources */,
 				5F14DE6025CB40FE00A5CD54 /* ContentView.swift in Sources */,
@@ -345,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F14DE7325CB450400A5CD54 /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F14DE7425CB450400A5CD54 /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F14DE7325CB450400A5CD54 /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F14DE5025CB40FE00A5CD54 /* Project object */;
 }
